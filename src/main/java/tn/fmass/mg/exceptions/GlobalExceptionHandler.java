@@ -26,7 +26,7 @@ public class GlobalExceptionHandler {
        // details.clear();
         //details.add(ex.getMessage());
         erreurs.clear();
-        erreurs.put("NOT FOUND ",ex.getMessage());
+        erreurs.put("NOT FOUND ERROR",ex.getMessage());
         return ResponseEntity.status(HttpStatus.NOT_FOUND)
                 .body(erreurs);
     }
